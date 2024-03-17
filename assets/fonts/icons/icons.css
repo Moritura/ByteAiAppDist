@@ -1,0 +1,93 @@
+@font-face {
+	font-family: "icons";
+	src: url("./icons.eot?53ca6cac54cc1a81fb4c1bb887897a60?#iefix") format("embedded-opentype"),
+url("./icons.woff2?53ca6cac54cc1a81fb4c1bb887897a60") format("woff2"),
+url("./icons.woff?53ca6cac54cc1a81fb4c1bb887897a60") format("woff");
+}
+
+.icon {
+	line-height: 1;
+}
+
+.icon:before {
+	font-family: icons !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.icon-arrow-down:before {
+	content: "\f101";
+}
+.icon-asteroid-byte:before {
+	content: "\f102";
+}
+.icon-asteroid:before {
+	content: "\f103";
+}
+.icon-atom:before {
+	content: "\f104";
+}
+.icon-boost:before {
+	content: "\f105";
+}
+.icon-build:before {
+	content: "\f106";
+}
+.icon-diagram:before {
+	content: "\f107";
+}
+.icon-document:before {
+	content: "\f108";
+}
+.icon-factory:before {
+	content: "\f109";
+}
+.icon-game:before {
+	content: "\f10a";
+}
+.icon-gear:before {
+	content: "\f10b";
+}
+.icon-git:before {
+	content: "\f10c";
+}
+.icon-graph:before {
+	content: "\f10d";
+}
+.icon-lamp:before {
+	content: "\f10e";
+}
+.icon-logo:before {
+	content: "\f10f";
+}
+.icon-magic:before {
+	content: "\f110";
+}
+.icon-mark:before {
+	content: "\f111";
+}
+.icon-money-loop:before {
+	content: "\f112";
+}
+.icon-mountain:before {
+	content: "\f113";
+}
+.icon-person-loop:before {
+	content: "\f114";
+}
+.icon-question:before {
+	content: "\f115";
+}
+.icon-racket-byte:before {
+	content: "\f116";
+}
+.icon-racket:before {
+	content: "\f117";
+}
+.icon-settings:before {
+	content: "\f118";
+}
+.icon-toggle:before {
+	content: "\f119";
+}
