@@ -1,0 +1,9 @@
+{
+  "titles": {
+    "modules": "Modules list",
+    "module/load": "Module loading",
+    "module/code": "Module <name>",
+    "setup-module": "Setup module",
+    "account-settings": "Settings"
+  }
+}
