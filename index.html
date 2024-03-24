@@ -1,196 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
 
     <title>ByteAi</title>
 
-    <base href="/" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/favicon/favicon-16x16.png"
-    />
-    <link
-      rel="manifest"
-      href="./assets/favicon/site.webmanifest"
-    />
-    <link
-      rel="mask-icon"
-      href="./assets/favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta
-      name="msapplication-TileColor"
-      content="#da532c"
-    />
-    <meta
-      name="theme-color"
-      content="#ffffff"
-    />
+    <base href="ByteAiAppDist/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism-okaidia.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism-okaidia.min.css">
     <!-- <link rel="stylesheet" href="https://prismjs.com/download.html#themes=prism-dark&languages=markup+css+clike+javascript+go+js-extras+plsql+sql"> -->
-    <style>
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        vertical-align: baseline;
-      }
-      body {
-        line-height: 1;
-      }
-      html {
-        --color-sky: #c0f4ff;
-        --color-pink: #ffccfa;
-        --color-grey: #c0c0c0;
-        --color-black: #535353;
-        --color-coral: #f5abad;
-        --color-green: #c3e3cc;
-        --color-orange: #ffd28e;
-        --color-yellow: #fffba7;
-        --color-dark-grey: #535353;
-        --color-green-light: #e0f0e5;
-        --color-purple-light: #d3cbff;
-        --header-height: 60px;
-        --sidebar-width: 250px;
-      }
-      @font-face {
-        font-family: Fixel Display;
-        src: url(FixelDisplay-Black.2c9a4f61f56d3f51.eot);
-        src: local("Fixel Display Black"), local("FixelDisplay-Black"),
-          url(FixelDisplay-Black.2c9a4f61f56d3f51.eot?#iefix) format("embedded-opentype"),
-          url(FixelDisplay-Black.ef20efaa5f54fd89.woff2) format("woff2"),
-          url(FixelDisplay-Black.a7e2a0bcbce3746a.woff) format("woff"),
-          url(FixelDisplay-Black.782037074ddb3ebc.ttf) format("truetype");
-        font-weight: 900;
-        font-style: normal;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: Fixel Display;
-        src: url(FixelDisplay-Bold.c6c0c10d36882915.eot);
-        src: local("Fixel Display Bold"), local("FixelDisplay-Bold"),
-          url(FixelDisplay-Bold.c6c0c10d36882915.eot?#iefix) format("embedded-opentype"),
-          url(FixelDisplay-Bold.e55207425c232a5f.woff2) format("woff2"),
-          url(FixelDisplay-Bold.765dac105096030b.woff) format("woff"),
-          url(FixelDisplay-Bold.90bb8ef54c2ff441.ttf) format("truetype");
-        font-weight: 700;
-        font-style: normal;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: Fixel Display;
-        src: url(FixelDisplay-Thin.0a0fbf04d6e6c938.eot);
-        src: local("Fixel Display Thin"), local("FixelDisplay-Thin"),
-          url(FixelDisplay-Thin.0a0fbf04d6e6c938.eot?#iefix) format("embedded-opentype"),
-          url(FixelDisplay-Thin.2acea6b7429c61b2.woff2) format("woff2"),
-          url(FixelDisplay-Thin.688103beaf1b4829.woff) format("woff"),
-          url(FixelDisplay-Thin.6e3f7705d425a80a.ttf) format("truetype");
-        font-weight: 100;
-        font-style: normal;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: Fixel Display;
-        src: url(FixelDisplay-Medium.2523d18767a1f3ed.eot);
-        src: local("Fixel Display Medium"), local("FixelDisplay-Medium"),
-          url(FixelDisplay-Medium.2523d18767a1f3ed.eot?#iefix) format("embedded-opentype"),
-          url(FixelDisplay-Medium.3da331b25da2a288.woff2) format("woff2"),
-          url(FixelDisplay-Medium.9f7e59ea2fb07909.woff) format("woff"),
-          url(FixelDisplay-Medium.df915d5c51f02c36.ttf) format("truetype");
-        font-weight: 500;
-        font-style: normal;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: Fixel Display;
-        src: url(FixelDisplay-Regular.4790b5059b3cc602.eot);
-        src: local("Fixel Display Regular"), local("FixelDisplay-Regular"),
-          url(FixelDisplay-Regular.4790b5059b3cc602.eot?#iefix) format("embedded-opentype"),
-          url(FixelDisplay-Regular.439b9fd65169d124.woff2) format("woff2"),
-          url(FixelDisplay-Regular.22bd54e98627519a.woff) format("woff"),
-          url(FixelDisplay-Regular.bd266f532f5349b5.ttf) format("truetype");
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: Fixel Display;
-        src: url(FixelDisplay-Light.3c2c73456fe578a7.eot);
-        src: local("Fixel Display Light"), local("FixelDisplay-Light"),
-          url(FixelDisplay-Light.3c2c73456fe578a7.eot?#iefix) format("embedded-opentype"),
-          url(FixelDisplay-Light.2faf8ad31696cf92.woff2) format("woff2"),
-          url(FixelDisplay-Light.de5f1735ed9d47e8.woff) format("woff"),
-          url(FixelDisplay-Light.ce831a64516e3c54.ttf) format("truetype");
-        font-weight: 300;
-        font-style: normal;
-        font-display: swap;
-      }
-      html {
-        font-size: 16px;
-        font-family: Fixel Display;
-        font-weight: 500;
-        line-height: 16px;
-        color: var(--color-black);
-      }
-      body {
-        font-size: 1.2rem;
-        line-height: 1.5rem;
-      }
-      body * {
-        box-sizing: border-box;
-        outline: none;
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="styles.bd4473c1c240107f.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript
-      ><link
-        rel="stylesheet"
-        href="styles.bd4473c1c240107f.css"
-    /></noscript>
-  </head>
+  <style>html,body{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}body{line-height:1}html{--color-sky:#C0F4FF;--color-pink:#FFCCFA;--color-grey:#C0C0C0;--color-black:#535353;--color-coral:#F5ABAD;--color-green:#C3E3CC;--color-orange:#FFD28E;--color-yellow:#FFFBA7;--color-dark-grey:#535353;--color-green-light:#E0F0E5;--color-purple-light:#D3CBFF;--header-height:60px;--sidebar-width:250px}@font-face{font-family:Fixel Display;src:url(FixelDisplay-Black.2c9a4f61f56d3f51.eot);src:local("Fixel Display Black"),local("FixelDisplay-Black"),url(FixelDisplay-Black.2c9a4f61f56d3f51.eot?#iefix) format("embedded-opentype"),url(FixelDisplay-Black.ef20efaa5f54fd89.woff2) format("woff2"),url(FixelDisplay-Black.a7e2a0bcbce3746a.woff) format("woff"),url(FixelDisplay-Black.782037074ddb3ebc.ttf) format("truetype");font-weight:900;font-style:normal;font-display:swap}@font-face{font-family:Fixel Display;src:url(FixelDisplay-Bold.c6c0c10d36882915.eot);src:local("Fixel Display Bold"),local("FixelDisplay-Bold"),url(FixelDisplay-Bold.c6c0c10d36882915.eot?#iefix) format("embedded-opentype"),url(FixelDisplay-Bold.e55207425c232a5f.woff2) format("woff2"),url(FixelDisplay-Bold.765dac105096030b.woff) format("woff"),url(FixelDisplay-Bold.90bb8ef54c2ff441.ttf) format("truetype");font-weight:700;font-style:normal;font-display:swap}@font-face{font-family:Fixel Display;src:url(FixelDisplay-Thin.0a0fbf04d6e6c938.eot);src:local("Fixel Display Thin"),local("FixelDisplay-Thin"),url(FixelDisplay-Thin.0a0fbf04d6e6c938.eot?#iefix) format("embedded-opentype"),url(FixelDisplay-Thin.2acea6b7429c61b2.woff2) format("woff2"),url(FixelDisplay-Thin.688103beaf1b4829.woff) format("woff"),url(FixelDisplay-Thin.6e3f7705d425a80a.ttf) format("truetype");font-weight:100;font-style:normal;font-display:swap}@font-face{font-family:Fixel Display;src:url(FixelDisplay-Medium.2523d18767a1f3ed.eot);src:local("Fixel Display Medium"),local("FixelDisplay-Medium"),url(FixelDisplay-Medium.2523d18767a1f3ed.eot?#iefix) format("embedded-opentype"),url(FixelDisplay-Medium.3da331b25da2a288.woff2) format("woff2"),url(FixelDisplay-Medium.9f7e59ea2fb07909.woff) format("woff"),url(FixelDisplay-Medium.df915d5c51f02c36.ttf) format("truetype");font-weight:500;font-style:normal;font-display:swap}@font-face{font-family:Fixel Display;src:url(FixelDisplay-Regular.4790b5059b3cc602.eot);src:local("Fixel Display Regular"),local("FixelDisplay-Regular"),url(FixelDisplay-Regular.4790b5059b3cc602.eot?#iefix) format("embedded-opentype"),url(FixelDisplay-Regular.439b9fd65169d124.woff2) format("woff2"),url(FixelDisplay-Regular.22bd54e98627519a.woff) format("woff"),url(FixelDisplay-Regular.bd266f532f5349b5.ttf) format("truetype");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:Fixel Display;src:url(FixelDisplay-Light.3c2c73456fe578a7.eot);src:local("Fixel Display Light"),local("FixelDisplay-Light"),url(FixelDisplay-Light.3c2c73456fe578a7.eot?#iefix) format("embedded-opentype"),url(FixelDisplay-Light.2faf8ad31696cf92.woff2) format("woff2"),url(FixelDisplay-Light.de5f1735ed9d47e8.woff) format("woff"),url(FixelDisplay-Light.ce831a64516e3c54.ttf) format("truetype");font-weight:300;font-style:normal;font-display:swap}html{font-size:16px;font-family:Fixel Display;font-weight:500;line-height:16px;color:var(--color-black)}body{font-size:1.2rem;line-height:1.5rem}body *{box-sizing:border-box;outline:none}</style><link rel="stylesheet" href="styles.bd4473c1c240107f.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.bd4473c1c240107f.css"></noscript></head>
 
   <body>
     <app-root></app-root>
-    <script
-      src="./runtime.f5de948b79d5bcbf.js"
-      type="module"
-    ></script>
-    <script
-      src="./polyfills.1d0e205a78df43f7.js"
-      type="module"
-    ></script>
-    <script
-      src="./main.be07ac6221fa09b4.js"
-      type="module"
-    ></script>
-  </body>
-</html>
+  <script src="runtime.f5de948b79d5bcbf.js" type="module"></script><script src="polyfills.1d0e205a78df43f7.js" type="module"></script><script src="main.be07ac6221fa09b4.js" type="module"></script>
+
+</body></html>
